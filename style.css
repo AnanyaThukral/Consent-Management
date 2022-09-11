@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/sportsnethome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cookie-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 5%) 0px 4px 14px;
+    border-radius: 5px;
+    position: fixed;
+    width: 315px;
+    z-index:41;
+    top: 75%;
+    left: 2%;
+    padding: 25px;
+    /* visibility: hidden; just for debugging, remove later */
+}
+
+.cookie-box .first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 12px;
+}
+
+.cookie-box .first-row .cross{
+    border: none;
+    background: none;
+    transition: background-color 250ms ease 0s;
+}
+
+.icon{
+    color: rgb(4, 107, 251);
+    margin-right: 12px;
+    padding-top: 4px;
+}
+
+.question{
+    color: rgb(88, 88, 88);
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.message{
+    color: rgb(77, 77, 77);
+    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-buttons .cutomize-btn .custom-btn{
+    border: none;
+    background: none;
+    color: rgb(88, 88, 88);
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 250ms ease 0s;
+}
+
+.option-btn > button{
+  font-size: 13px;
+}
+
+.option-btn {
+    display: flex;
+    gap: 10px;
+}
+
+/*Customization Container*/
+
+.customize-box {
+    background-color: white;
+    border-radius: 5px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 14px;
+    outline: none;
+    font-size: 12px;
+    /* left: 2%;
+    top: 20%; */
+    top: 55%;
+    left: 2%;
+    position: fixed;
+    padding: 10px;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 7;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(117, 117, 117);
+    border: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    outline: 0;
+    box-shadow: rgb(0 0 0 / 2%) 0px 4px 14px 0px;
+    min-height: 50px;
+}
+
+.back, .done {
+    border: none;
+    background: none;
+    color: rgb(117, 117, 117);
+}
+
+/* .essential-container{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: initial;
+    border-image: radial-gradient(rgba(0, 0, 0, 0.3), transparent 90%) 0 0 1 / 1 / 0 stretch;
+    padding: 8px 12px 16px;
+    margin: 8px 0px;
+    border-width: 1px;
+} */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side{
+    display: flex;
+    gap: 5px;
+}
+
+.fa-toggle-off{
+    -webkit-text-stroke: 1px background-color;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(104, 104, 104);
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.right-side span{
+    font-size: 11px;
+}
+
+.Icon__StyledIcon-sc-1emr5ew-0 {
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    color: rgb(4, 107, 251);
+    transition: color 250ms ease 0s;
+}
+
+
+.second-row {
+    color: rgb(104, 104, 104);
+    line-height: 150%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn-animate .arrow-animate {
+    transition: transform 0.15s ease-out 0s;
+    margin-left: 2px;
+}
+
+.more-details-btn{
+    border: none;
+    background: none;
+    color: rgb(4, 107, 251);
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 12px;
+}
+
+.btn-animate {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 7px 5px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: -5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 150%;
+    color: rgb(4, 107, 251);
+}
+
+.btn-animate:hover{
+    color: rgb(0, 87, 231);
+}
+
+.btn-animate:hover .arrow-animate  {
+    transform: translateX(8px);
+}
+
+/* .main-view{
+    overflow-y: scroll;
+} */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.preference-popup{
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    padding: 20px 20px 18px 17px;
+    background: white;
+    box-shadow: rgb(0 0 0 / 5%) 0px 4px 14px;
+    border-radius: 5px;
+    position: fixed;
+    top: 75%;
+    left: 2%;
+    visibility: hidden;
+    
+}
+
+.preference-popup h3{
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+    font-size: 12px;
+    line-height: 1.2;
+    margin-right: 32px;
+}
+
+.preference-popup p{
+    margin: 12px 0px;
+    line-height: 1.5;
+    overflow: hidden;
+    color: rgb(77, 77, 77);
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.preference-popup .options{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.preference-popup .no-custom-btn{
+    color: rgb(88, 88, 88);
+}
+
+.preference-popup .btn-style{
+    appearance: none;
+    min-width: 72px;
+    min-height: 31px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    box-sizing: border-box;
+    user-select: none;
+    transition: background-color 250ms ease 0s;
+    background: transparent;
+    color: rgb(117, 117, 117);
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.preference-popup .btn-primary-style{
+    appearance: none;
+    padding: 0px 12px;
+    min-width: 72px;
+    min-height: 31px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+    background: rgb(4, 107, 251);
+    transition: background-color 250ms ease 0s;
+    font-size: 12px;
+}
+
+.dkiMZf {
+    position: relative;
+    width: 38px;
+    height: 22px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    cursor: auto;
+}
+
+button {
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+}
+
+button:disabled {
+    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+}
+
+.dkiMZf input {
+    height: 0px;
+    width: 0%;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: circle(0px at 50% 50%);
+}
+
+.heayvZ {
+    margin-left: 4px;
+}
+
+input[type="checkbox" i]:disabled {
+    background-color: initial;
+}
+
+input:disabled {
+    cursor: default;
+    color: -internal-light-dark(rgb(84, 84, 84), rgb(170, 170, 170));
+    border-color: rgba(118, 118, 118, 0.3);
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+.dkiMZf input:checked .SwitchV2__Track-ljj1t8-0 {
+    background-color: rgb(4, 107, 251);
+}
+
+.dkiMZf .SwitchV2__Track-ljj1t8-0 {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    right: 0px;
+}
+
+/* toggle class */
+.fGQZUt {
+    border-radius: 100vh;
+    height: 20px;
+    width: 34px;
+    transition: background-color 0.25s ease 0s;
+    background-color: rgb(202, 202, 202);
+}
+
+.dkiMZf input:checked ~ .SwitchV2__Handle-ljj1t8-1 {
+    transform: translateX(100%);
+}
+
+.dkiMZf .SwitchV2__Handle-ljj1t8-1 {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+.fYBsUf {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
+    transition: transform 0.25s ease 0s;
+}
+
+
+/*mobile*/
+
+@media (max-width: 600px) {
+    .cookie-box{
+       /* background-color: red; */
+       top: 65%;
+       left: 8%;
+    }
+    .customize-box{
+        top: 40%;
+        left: 8%;
+    }
+    .preference-popup{
+        top: 70%;
+        left: 8%;
+    }
+    body{
+        background-image: url(./img/mobilesportsnet.png);
+    }
+}
+
+
+/* testing */
+
+.category-list{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.category{
+    display: flex;
+    border-style: solid;
+    border-color: initial;
+    border-image: radial-gradient(rgba(0, 0, 0, 0.3), transparent 90%) 0 0 1 / 1 / 0 stretch;
+    padding: 8px 12px 16px;
+    margin: 8px 0px;
+    border-width: 1px;
+}
+
+.content p{
+    color: rgb(104, 104, 104);
+    line-height: 150%;
+}
+
+.content .first-row{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+/* testing toggle button */
+
+.toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 34px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 100vh;
+    transition: 0.3s;
+}
+
+.toggle .toggle-button{
+    appearance: none;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle.active{
+    background: rgb(4, 107, 251);
+}
+
+.toggle.active .toggle-button{
+    left: 17px;
+}
+
+.essential-cookie{
+    background:rgb(111, 152, 210);
+}
+
+.essential-cookie .toggle-button{
+    cursor: default;
+    left: 17px;
+}
+
