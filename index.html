@@ -8,123 +8,104 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <title>Document</title>
+    <title>Cookie Consent Management</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- cookie container start -->
-    <div class="cookie-box" id = "el">
+    <div class="cookie-box">
         <div class="first-row">
-            <p class="question">Can we store cookies?</p>
-            <button class="cross"><i class="fa-solid fa-xmark"></i></button>        
+            <p class="cookie-box-title">We use cookies!</p>
+            <button class="cookie-cross">
+                <i class="fa-solid fa-xmark"></i>
+            </button>        
         </div>    
-            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus accusamus voluptatum <a href="https://www.rogerssportsandmedia.com/privacy-policy/#section17">privacy policy</a></p>
+            <p class="message">Some are necessary, but some are optional. Why do we use them? For analyzing site usage, enhancing site navigation and improving our service. Check out our <a href="https://www.rogerssportsandmedia.com/privacy-policy/#section17">privacy policy</a></p>
         <div class="cookie-buttons">
             <div class="cutomize-btn">
                 <button class="custom-btn">Configure</button>
             </div>
-            <div class="option-btn">
-                <!-- <button type="button" class="px-4 btn btn-outline-primary">No</button> -->
+            <div class="ok-btn">
                 <button type="button" class="px-4 btn btn-primary">OK</button>
             </div>
         </div>
     </div> 
     <!-- cookie container end -->
+
     <!-- custom container start -->
     <div class="customize-box">
         <div class="nav">
             <button class="back">
-                <svg class = "back-btn" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="1.33333" height="9.33333" rx="0.666667" transform="matrix(0 -1 -1 0 12.6667 8.6665)" fill="#979797"></rect><path d="M8.47132 11.5284C8.73167 11.7888 8.73167 12.2109 8.47132 12.4712C8.21097 12.7316 7.78886 12.7316 7.52851 12.4712L3.52851 8.47124C3.27613 8.21886 3.2673 7.81246 3.50848 7.54935L7.17515 3.54935C7.42394 3.27794 7.84566 3.25961 8.11707 3.5084C8.38848 3.7572 8.40682 4.17891 8.15802 4.45032L4.92268 7.97979L8.47132 11.5284Z" fill="currentColor"></path></svg>
-                Back
+                <i class="fa fa-arrow-left"></i>
             </button>
-            <span class="title">Our Features</span>
-            <button class="done">Done</button>
+            <button class="configure-cross">
+                <i class="fa-solid fa-xmark"></i>
+            </button>      
         </div>
+        
         <div class="category-list">
             <div class="category">
                 <i class="fas fa-bolt icon"></i> 
                 <div class="content">
-                    <div class="first-row">
+                    <div class="custom-first-row">
                         <span class="title">Essential</span>
                         <div class="right-side">
-                            <span>Required</span>
-                            <!-- <i class="fa-solid fa-toggle-on fa-2x"></i> -->
-                             
+                            <span>Required</span>          
                             <div class="toggle essential-cookie">
                                 <div class="toggle-button"></div>
                             </div>
-
                         </div>
                     </div>
                     <div class="second-row">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nulla nesciunt, rerum esse nisi dolores.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia incidunt enim maxime nesciunillo.</p>
                         <button class="more-details-btn btn-animate">
                             More Details
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none:" xmlns="http//www.w3.org/2000/svg" class="Icon__StyledIcon-sc-1emr5ew-0 PolicyList__Arrow-tjbngs-0 jETFnZ dpZIrQ"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M5.52843 4.47145C5.26808 4.2111 5.26808 3.78899 5.52843 3.52864C5.78878 3.26829 6.21089 3.26829 6.47124 3.52864L10.4712 7.52864C10.7236 7.78102 10.7325 8.18741 10.4913 8.45052L6.82461 12.4505C6.57581 12.7219 6.1541 12.7403 5.88269 12.4915C5.61127 12.2427 5.59294 11.821 5.84173 11.5496L9.07708 8.02009L5.52843 4.47145Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledIcon-sc-1emr5ew-0 arrow-animate"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M5.52843 4.47145C5.26808 4.2111 5.26808 3.78899 5.52843 3.52864C5.78878 3.26829 6.21089 3.26829 6.47124 3.52864L10.4712 7.52864C10.7236 7.78102 10.7325 8.18741 10.4913 8.45052L6.82461 12.4505C6.57581 12.7219 6.1541 12.7403 5.88269 12.4915C5.61127 12.2427 5.59294 11.821 5.84173 11.5496L9.07708 8.02009L5.52843 4.47145Z"></path></svg>
                         </button>
                     </div>
                 </div>
             </div>
-            <!-- Analytics container -->
-                <div class="category">
+                 <div class="category">
                     <i class="fa-solid fa-signal icon"></i>
                     <div class="content">
-                        <div class="first-row">
+                        <div class="custom-first-row">
                             <span class="title">Analytics</span>
-                            <!-- <i class="fa-solid fa-toggle-off fa-2x"></i> -->
-                            <!-- <button class="SwitchV2__Wrapper-ljj1t8-2 dkiMZf PolicyList__PolicySwitch-tjbngs-2 heayvZ" disabled="" tabindex="0" role="checkbox" aria-checked="true" aria-labelledby="policy-list-pol:fd4187a4-390b-4725-82ee-1684ee5b6304"><input tabindex="-1" aria-hidden="true" type="checkbox" disabled="" class="PolicyList__PolicySwitch-tjbngs-2 heayvZ"><div aria-hidden="true" class="SwitchV2__Track-ljj1t8-0 fGQZUt"></div><div aria-hidden="true" class="SwitchV2__Handle-ljj1t8-1 fYBsUf"></div></button> -->
                             <div class="toggle active">
                                 <div class="toggle-button"></div>
                             </div>
                         </div>
                         <div class="second-row">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia incidunt enim maxime nesciunillo.</p>
-                            <button class="more-details-btn cPDwFL">
+                            <button class="more-details-btn btn-animate">
                                 More Details
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledIcon-sc-1emr5ew-0 arrow-animate"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M5.52843 4.47145C5.26808 4.2111 5.26808 3.78899 5.52843 3.52864C5.78878 3.26829 6.21089 3.26829 6.47124 3.52864L10.4712 7.52864C10.7236 7.78102 10.7325 8.18741 10.4913 8.45052L6.82461 12.4505C6.57581 12.7219 6.1541 12.7403 5.88269 12.4915C5.61127 12.2427 5.59294 11.821 5.84173 11.5496L9.07708 8.02009L5.52843 4.47145Z"></path></svg>
                             </button>
                         </div>
                     </div>
-                </div>
-                <!-- Marketing container -->         
+                </div>  
                 <div class="category">
                     <i class="fa-solid fa-bullhorn icon"></i>
                     <div class="content">
-                        <div class="first-row">
-                            <span class="title">Marketing</span>
-                            <!-- <button class="SwitchV2__Wrapper-ljj1t8-2 dkiMZf PolicyList__PolicySwitch-tjbngs-2 heayvZ" disabled="" tabindex="0" role="checkbox" aria-checked="true" aria-labelledby="policy-list-pol:fd4187a4-390b-4725-82ee-1684ee5b6304"><input tabindex="-1" aria-hidden="true" type="checkbox" disabled="" class="PolicyList__PolicySwitch-tjbngs-2 heayvZ"><div aria-hidden="true" class="SwitchV2__Track-ljj1t8-0 fGQZUt"></div><div aria-hidden="true" class="SwitchV2__Handle-ljj1t8-1 fYBsUf"></div></button> -->
-                            
+                        <div class="custom-first-row">
+                            <span class="title">Marketing</span>                     
                             <div class="toggle active">
                                 <div class="toggle-button"></div>
                             </div>
-
-
                         </div>
                         <div class="second-row">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio quas dicta, aspernatur numquam recusandae.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia incidunt enim maxime nesciunillo.</p>
                             <button class="more-details-btn btn-animate">
                                 More Details
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none:" xmlns="http//www.w3.org/2000/svg" class="Icon__StyledIcon-sc-1emr5ew-0 PolicyList__Arrow-tjbngs-0 jETFnZ dpZIrQ"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M5.52843 4.47145C5.26808 4.2111 5.26808 3.78899 5.52843 3.52864C5.78878 3.26829 6.21089 3.26829 6.47124 3.52864L10.4712 7.52864C10.7236 7.78102 10.7325 8.18741 10.4913 8.45052L6.82461 12.4505C6.57581 12.7219 6.1541 12.7403 5.88269 12.4915C5.61127 12.2427 5.59294 11.821 5.84173 11.5496L9.07708 8.02009L5.52843 4.47145Z"></path></svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledIcon-sc-1emr5ew-0 arrow-animate"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M5.52843 4.47145C5.26808 4.2111 5.26808 3.78899 5.52843 3.52864C5.78878 3.26829 6.21089 3.26829 6.47124 3.52864L10.4712 7.52864C10.7236 7.78102 10.7325 8.18741 10.4913 8.45052L6.82461 12.4505C6.57581 12.7219 6.1541 12.7403 5.88269 12.4915C5.61127 12.2427 5.59294 11.821 5.84173 11.5496L9.07708 8.02009L5.52843 4.47145Z"></path></svg>
                             </button>
                         </div>
                     </div>
-            </div>
+            </div> 
         </div>
     </div>
     <!-- custom container end -->
-
-    <!-- save perfernce container start -->
-    <div class="preference-popup">
-        <h3>Save perfernces</h3>
-        <p>You'll be accepting: Essential</p>
-        <div class="options">
-            <button class="no-custom-btn btn-style">No, Customize</button>
-            <button type="button" class="px-4 btn btn-primary btn-primary-style this-is-ok-btn">This is Okay</button>
-        </div>
-    </div>
-    <!-- save preferance container end -->
 
     <script src="app.js"></script>
 </body>

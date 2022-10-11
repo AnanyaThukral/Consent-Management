@@ -1,37 +1,28 @@
 //selectors
 const cookieModal = document.querySelector('.cookie-box');
 const customizeBox = document.querySelector('.customize-box');
-const preferenceModal = document.querySelector('.preference-popup');
 const categoryList = document.querySelector('.category-list');
 const toggle = document.querySelector('.toggle');
+const confirgureButton = document.querySelector(".custom-btn");
 
 //listeners
-document.querySelector(".custom-btn").onclick =  () => {
+confirgureButton.onclick =  () => {
     cookieModal.style.visibility = 'hidden';
-    addCategory();
+    // addCategory();
     customizeBox.style.visibility = 'visible';
 }
 
 document.querySelector(".back").onclick = () => {
     customizeBox.style.visibility = "hidden"
-    preferenceModal.style.visibility = "visible"
+    cookieModal.style.visibility = 'visible';
 }
 
-document.querySelector(".no-custom-btn").onclick = () => {
-    preferenceModal.style.visibility = "hidden"
-    customizeBox.style.visibility = "visible"
-}
-
-document.querySelector(".this-is-ok-btn").onclick = () => {
-    preferenceModal.style.visibility= "hidden";
-}
-
-document.querySelector(".done").onclick = () => {
-    customizeBox.style.visibility = "hidden"
-}
-
-document.querySelector(".cross").onclick = () =>{
+document.querySelector(".cookie-cross").onclick = () => {
     cookieModal.style.visibility = "hidden";
+}
+
+document.querySelector(".configure-cross").onclick = () => {
+    customizeBox.style.visibility = "hidden";
 }
 
 document.querySelector('.category-list').addEventListener("click", switchButton);
@@ -58,7 +49,7 @@ const addCategory = () => {
     // Add classes 
     newCategory.classList.add('category');
     mainContent.classList.add('content'); //main-content
-    firstRow.classList.add('first-row');
+    firstRow.classList.add('custom-first-row');
     categoryType.classList.add('title'); //category-type
     categoryIcon.classList.add('icon', 'fa-solid', 'fa-bullhorn'); //change to dynamic
     buttonContainer.classList.add('toggle', 'active'); //essential cookie category
@@ -81,7 +72,7 @@ const addCategory = () => {
 
 }
 
-// Switch Button Optin/Optout
+// Optin/Optout Cookies (Configure Modal)
 function switchButton(event){
     const item = event.target
     if(item.classList[0] === 'toggle-button' && !item.parentElement.classList.contains('essential-cookie')){
@@ -89,9 +80,45 @@ function switchButton(event){
     }
 }
 
+//run this as soon as the window refershes
+// window.onload = darkTheme;
 
+//update styles for dark theme
+function darkTheme(){
 
+    const questionCookieModal = document.querySelector('.question')
+    const messageCookieModal = document.querySelector('.message')
+    const buttonCookieModal = document.querySelector('.btn')
+    const crossCookieModal = document.querySelector('.cross')
+    const navCustomModal = document.querySelector('.nav')
+    const backCustomModal = document.querySelector('.back')
+    const doneCustomModal = document.querySelector('.done') 
+    const titleCustomModal = document.getElementsByClassName('custom-first-row')
+    const secondRowCustomoModal = document.getElementsByClassName('second-row')
 
+    // styles for cookie Modal
+    crossCookieModal.style.color = 'white'
+    cookieModal.style.backgroundColor = 'black';
+    questionCookieModal.style.color = 'rgb(237, 230, 230)';
+    messageCookieModal.style.color = 'white';
+    confirgureButton.style.color = 'white'
+    if(buttonCookieModal.classList.contains('btn-primary')){
+        buttonCookieModal.classList.toggle('btn-light')
+    }
 
+    // styles for custom Modal
+    customizeBox.style.backgroundColor = 'black';
+    navCustomModal.style.color = 'white'
+    backCustomModal.style.color = 'white'
+    doneCustomModal.style.color = 'white'
+ 
 
+    for(let item of secondRowCustomoModal){
+        item.style.color = 'whitesmoke'
+    }
+    for(let item of titleCustomModal){
+        item.style.color = 'white'
+    }
+
+}
 
