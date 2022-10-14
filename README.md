@@ -1,4 +1,4 @@
-This project is done to recreate/redesign the Cookie Consent interface inorder adhere to the new cookie compliance laws. To comply with the regulations governing cookies under the GDPR:
+This project is done to recreate/redesign the Cookie Consent interface inorder to adhere to the new cookie compliance laws. To comply with the regulations governing cookies under the GDPR:
 
 - Receive users’ consent before you use any cookies except strictly necessary cookies.
 - Provide accurate and specific information about the data each cookie tracks and its purpose in plain language before consent is received.
