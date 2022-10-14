@@ -1,0 +1,14 @@
+This project is done to recreate/redesign the Cookie Consent interface inorder adhere to the new cookie compliance laws. To comply with the regulations governing cookies under the GDPR:
+
+- Receive users’ consent before you use any cookies except strictly necessary cookies.
+- Provide accurate and specific information about the data each cookie tracks and its purpose in plain language before consent is received.
+- Make it as easy for users to withdraw their consent as it was for them to give their consent in the first place.
+
+The user experience has been divided into two screens (Cookie Modal and Configure Modal). The Cookie Modal popup up as soon as the user lands on website. The Cookie Modal has a button "Configure" which takes user to Configure Modal. The Configure Modal consists a list of different cookies. The user can opt in/opt out of specific cookies based on their preferences.
+
+The frontend user interface is created using Html, CSS, Javascript. The styles have been written for both light/dark theme. If needed in the future, there is also a function written to dynamically add a new cookies category in the list under Configure Modal. It adds a new cookie category whenever called without needing to code again. However, this can be easily accomplished in ReactJs without needing to add this function by simply creating a component for each category.
+
+Points of Contact:
+Product Owner - Joey Ryken
+UX Design - Ananya Thukral, Umer Farooq
+Developer - Ananya Thukral
