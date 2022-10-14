@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    /* background-image: url('img/fxnowcanada.png');
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
 
 /*Cookie Modal Styles*/
 
@@ -211,6 +206,10 @@ body{
 .second-row {
     color: rgb(104, 104, 104);
     line-height: 150%;
+}
+
+.second-row a{
+    text-decoration: none;
 }
 
 .title {

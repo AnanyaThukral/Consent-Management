@@ -9,12 +9,24 @@ The user experience has been divided into two screens (Cookie Modal and Configur
 The frontend user interface is created using Html, CSS, Javascript. The styles have been written for both light/dark theme. If needed in the future, there is also a function written to dynamically add a new cookies category in the list under Configure Modal. It adds a new cookie category whenever called without needing to code again. However, this can be easily accomplished in ReactJs without needing to add this function by simply creating a component for each category.
 
 Points of Contact:
-Product Owner - Joey Ryken
-UX Design - Ananya Thukral, Umer Farooq
-Developer - Ananya Thukral
 
-Code Setup/Usage
+- Product Owner - Joey Ryken
+- UX Design - Ananya Thukral, Umer Farooq
+- Developer - Ananya Thukral
+
+Code Setup/Usage:
 
 - Install the VS Code extension Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - Navigate to index.html and click on "Live server" (it is located at the bottom of the screen)
 - When you save changes, it runs the code automatically and reloads the application everytime.
+- By default the interface/design is rendered for light theme websites. To change UI to dark theme, navigate to app.js and scroll down to changeToDarkTheme() function.
+
+```
+changeToDarkTheme();
+```
+
+Pass the value "true" and update the function call like this:
+
+```
+changeToDarkTheme(true);
+```
