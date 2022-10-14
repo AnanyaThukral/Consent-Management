@@ -9,9 +9,9 @@ The user experience has been divided into two screens (Cookie Modal and Configur
 The frontend user interface is created using Html, CSS, Javascript. The styles have been written for both light/dark theme. If needed in the future, there is also a function written to dynamically add a new cookies category in the list under Configure Modal. It adds a new cookie category whenever called without needing to code again. However, this can be easily accomplished in ReactJs without needing to add this function by simply creating a component for each category.
 
 Points of Contact:
-Product Owner - Joey Ryken
-UX Design - Ananya Thukral, Umer Farooq
-Developer - Ananya Thukral
+- Product Owner - Joey Ryken
+- UX Design - Ananya Thukral, Umer Farooq
+- Developer - Ananya Thukral
 
 Code Setup/Usage
 
