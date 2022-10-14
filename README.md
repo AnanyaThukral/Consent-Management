@@ -18,3 +18,12 @@ Code Setup/Usage:
 - Install the VS Code extension Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - Navigate to index.html and click on "Live server" (it is located at the bottom of the screen)
 - When you save changes, it runs the code automatically and reloads the application everytime.
+- By default the interface/design is rendered for light theme websites. To change UI to dark theme, navigate to app.js and scroll down to changeToDarkTheme() function.
+
+```
+changeToDarkTheme();
+```
+Pass the value "true" and update the function call like this:
+```
+changeToDarkTheme(true);
+```
