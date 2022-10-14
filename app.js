@@ -5,6 +5,15 @@ const categoryList = document.querySelector('.category-list');
 const toggle = document.querySelector('.toggle');
 const confirgureButton = document.querySelector(".custom-btn");
 
+//added for dark theme
+const cookieTitle = document.querySelector(".cookie-box-title")
+const cookieCross = document.querySelector('.cookie-cross');
+const configureCross = document.querySelector(".configure-cross");
+const cookieMessage = document.querySelector('.message');
+const secondRowCustomoModal = document.getElementsByClassName('second-row')
+const titleCustomModal = document.getElementsByClassName('custom-first-row')
+
+
 //listeners
 confirgureButton.onclick =  () => {
     cookieModal.style.visibility = 'hidden';
@@ -17,11 +26,11 @@ document.querySelector(".back").onclick = () => {
     cookieModal.style.visibility = 'visible';
 }
 
-document.querySelector(".cookie-cross").onclick = () => {
+cookieCross.onclick = () => {
     cookieModal.style.visibility = "hidden";
 }
 
-document.querySelector(".configure-cross").onclick = () => {
+configureCross.onclick = () => {
     customizeBox.style.visibility = "hidden";
 }
 
@@ -80,19 +89,29 @@ function switchButton(event){
     }
 }
 
-//switch to dark theme 
-
-function darkTheme(theme){
-    if(theme = true){
+function changeToDarkTheme(theme){
+    if(theme == true){
         cookieModal.classList.add('container-dark-theme')
-        console.log('if')
+        customizeBox.classList.add('container-dark-theme')
+        cookieTitle.classList.add('dark-theme')
+        cookieCross.classList.add('dark-theme')
+        cookieMessage.classList.add('dark-theme')
+        confirgureButton.classList.add('dark-theme')
+        configureCross.classList.add('dark-theme')
+
+        for(let item of secondRowCustomoModal){
+            item.classList.add('second-row-dark-theme')
+        }
+        for(let item of titleCustomModal){
+            item.classList.add('dark-theme')
+        }
     }
-    else{
-        console.log('false');
-    }
-    
+    else {
+        //apply default css styles
+    }   
 }
 
-darkTheme(true);
+//change theme to dark
+changeToDarkTheme();
 
 
