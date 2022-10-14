@@ -80,4 +80,19 @@ function switchButton(event){
     }
 }
 
+//switch to dark theme 
+
+function darkTheme(theme){
+    if(theme = true){
+        cookieModal.classList.add('container-dark-theme')
+        console.log('if')
+    }
+    else{
+        console.log('false');
+    }
+    
+}
+
+darkTheme(true);
+
 
