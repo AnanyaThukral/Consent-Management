@@ -13,7 +13,7 @@ Points of Contact:
 - UX Design - Ananya Thukral, Umer Farooq
 - Developer - Ananya Thukral
 
-Code Setup/Usage
+Code Setup/Usage:
 
 - Install the VS Code extension Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - Navigate to index.html and click on "Live server" (it is located at the bottom of the screen)
