@@ -80,44 +80,4 @@ function switchButton(event){
     }
 }
 
-// run this as soon as the window refershes
-// window.onload = darkTheme;
-
-//update styles for dark theme
-function darkTheme(){
-
-    const titleCookieModal = document.querySelector('.cookie-box-title')
-    const messageCookieModal = document.querySelector('.message')
-    const buttonCookieModal = document.querySelector('.btn')
-    const crossCookieModal = document.querySelector('.cookie-cross')
-    const navCustomModal = document.querySelector('.nav')
-    const backCustomModal = document.querySelector('.fa-arrow-left')
-    const crossCustomModal = document.querySelector('.configure-cross') 
-    const titleCustomModal = document.getElementsByClassName('custom-first-row')
-    const secondRowCustomoModal = document.getElementsByClassName('second-row')
-
-    // styles for cookie Modal
-    crossCookieModal.style.color = 'white'
-    cookieModal.style.backgroundColor = 'black';
-    titleCookieModal.style.color = 'rgb(237, 230, 230)';
-    messageCookieModal.style.color = 'white';
-    confirgureButton.style.color = 'white'
-    if(buttonCookieModal.classList.contains('btn-primary')){
-        buttonCookieModal.classList.toggle('btn-light')
-    }
-
-    // styles for custom Modal
-    customizeBox.style.backgroundColor = 'black';
-    navCustomModal.style.color = 'white'
-    crossCustomModal.style.color = 'white'
- 
-
-    for(let item of secondRowCustomoModal){
-        item.style.color = 'whitesmoke'
-    }
-    for(let item of titleCustomModal){
-        item.style.color = 'white'
-    }
-
-}
 

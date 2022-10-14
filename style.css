@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url('img/sportsnethome.png');
+    background-image: url('img/fxnowcanada.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -70,7 +70,7 @@ body{
     align-items: center;
 }
 
-.cookie-buttons .cutomize-btn .custom-btn{
+.custom-btn{
     border: none;
     background: none;
     color: rgb(88, 88, 88);
@@ -80,13 +80,18 @@ body{
     text-decoration: underline;
 }
 
-.ok-btn > button{
-  font-size: 13px;
-}
-
-.ok-btn {
-    display: flex;
-    gap: 10px;
+.ok-btn{
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(4, 107, 251);
+    transition: background-color 250ms ease 0s;
+    padding: 0px 12px;
+    min-width: 72px;
+    min-height: 31px;
 }
 
 /*Configure Modal styles*/
@@ -352,6 +357,21 @@ input[type="checkbox" i] {
     cursor: default;
     left: 17px;
 }
+
+/* styles for dark theme*/
+
+.container-dark-theme{
+    background-color: black;
+}
+
+.dark-theme{
+    color: white;
+}
+
+.second-row-dark-theme {
+    color: whitesmoke;
+}
+
 
 /*Mobile*/
 
